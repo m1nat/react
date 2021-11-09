@@ -1,0 +1,99 @@
+aside {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .scroll {
+    width: 68%;
+    height: 100%;
+  }
+  nav {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-right: 10px;
+    
+    .nav__item {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+
+      .item__text{
+        color: rgb(92, 92, 92);
+        margin-left: 20px;
+        font-size: 1.1em;
+      }
+
+      .mypage {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/user-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .news {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/newspaper-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .messager {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/message-2-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .friends {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/user-5-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .communities {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/conference-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .photo {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/photo-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .music {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/music-2-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+
+      .video {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/film-2-48.png') no-repeat center center;
+        background-size: contain;
+        opacity: 0.9;
+      }
+    }
+  }
+}
