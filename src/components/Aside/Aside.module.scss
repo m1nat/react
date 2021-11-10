@@ -25,10 +25,16 @@ aside {
       justify-content: flex-start;
       cursor: pointer;
 
-      .item__text{
+      .item__text {
         color: rgb(92, 92, 92);
         margin-left: 20px;
         font-size: 1.1em;
+
+        a {
+          color: rgb(92, 92, 92);
+          font-size: 1.1em;
+          text-decoration: none;
+        }
       }
 
       .mypage {

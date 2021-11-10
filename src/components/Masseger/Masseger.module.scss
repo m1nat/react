@@ -1,0 +1,57 @@
+.messanger {
+  width: 95%;
+  height: 95%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .header {
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid #909099;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .back_to_main {
+      width: 7%;
+      height: 100%;
+      cursor: pointer;
+      background: url('../../assets/arrow-89-48.png') no-repeat center center;
+      background-size: 35%;
+      background-position: 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      p {
+        margin-left: 19px;
+        color: #909099;
+      }
+    }
+
+    .friend_info {
+      width: 30%;
+      height: 100%;
+      text-align: center;
+      color: #909099;
+      font-family: cursive;
+      font-style: italic;
+      cursor: pointer;
+    }
+
+    .friend_avatar {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 40px;
+      background: url("../../assets/user-48.png") no-repeat center center;
+      background-size: contain;
+      background-color: #d4d4d4;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+  }
+}

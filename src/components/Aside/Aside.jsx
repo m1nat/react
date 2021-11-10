@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classes from './Aside.module.scss';
 
 const Aside = () => {
@@ -11,11 +12,15 @@ const Aside = () => {
         </div>
         <div className={classes.nav__item}>
           <div className={classes.news}></div>
-          <div className={classes.item__text}>News</div>
+          <div className={classes.item__text}>
+            <Link to='/'>News</Link>
+          </div>
         </div>
         <div className={classes.nav__item}>
           <div className={classes.messager}></div>
-          <div className={classes.item__text}>Massanger</div>
+          <div className={classes.item__text}>
+            <Link to='/messages'>Messanger</Link>
+          </div>
         </div>
         <div className={classes.nav__item}>
           <div className={classes.friends}></div>
