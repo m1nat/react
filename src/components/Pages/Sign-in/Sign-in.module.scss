@@ -1,0 +1,63 @@
+.wrapper_signIn {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: url('../../../assets/abstract-network-data-background.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .board {
+    width: 500px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 101, 101, 0.5);
+    
+    form {
+      width: 60%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        color: white;
+      }
+
+      input {
+        width: 100%;
+        height: 28px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+      }
+      
+      button {
+        align-self: flex-start;
+        width: 60px;
+        height: 28px;
+        background-color: rgb(65, 105, 236);
+        outline: none;
+        border: 3px solid rgb(65, 105, 236);
+        transition: 0.5s;
+        border-radius: 3px;
+
+        &:hover {
+          border: 3px solid rgb(142, 167, 248);
+        }
+
+        a {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+}

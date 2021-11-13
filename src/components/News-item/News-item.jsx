@@ -2,18 +2,6 @@ import classes from './News-item.module.scss';
 import React, { Component } from 'react';
 export default class NewsItem extends Component {
 
-  state = {
-    done: false
-  }
-
-  show_news = (e) => {
-    this.setState( ({ done }) => {
-      return {
-        done: !done
-      }
-    })
-  }
-
   render() {
     const { news_title, news_body } = this.props;
     return (
