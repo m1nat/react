@@ -1,31 +1,36 @@
 import classes from './News-item.module.scss';
+import React, { Component } from 'react';
+export default class NewsItem extends Component {
 
-const News_item = () => {
-  return (
-    <div className={classes.news_item}>
-      <div className={classes.img_news}></div>
-      <div className={classes.news}>
-        <h3>News</h3>
-        <p>Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Dolor recusandae ea
-          corrupti blanditiisvoluptas aut expedita
-          totam eaque fugiat ut officia voluptates
-          aliquid ipsam rem voluptate ducimus, vero
-          alias magni? orem ipsum dolor sit amet consectetur,
-          adipisicing elit. Dolor recusandae ea
-          corrupti blanditiisvoluptas aut expedita
-          totam eaque fugiat ut officia voluptates
-          aliquid ipsam rem voluptate ducimus, vero
-          alias magni?
-        </p>
-        <div className={classes.communicate}>
-          <div className={classes.like}></div>
-          <div className={classes.comment}></div>
-          <div className={classes.shared}></div>
+  state = {
+    done: false
+  }
+
+  show_news = (e) => {
+    this.setState( ({ done }) => {
+      return {
+        done: !done
+      }
+    })
+  }
+
+  render() {
+    const { news_title, news_body } = this.props;
+    return (
+      <div className={classes.news_item} onClick={this.show_news}>
+        <div className={classes.img_news}></div>
+        <div className={classes.news}>
+          <h4 style={this.style}>{news_title}</h4>
+          <p>
+            {news_body}
+          </p>
+          <div className={classes.communicate}>
+            <div className={classes.like}></div>
+            <div className={classes.comment}></div>
+            <div className={classes.shared}></div>
+          </div>
         </div>
       </div>
-    </div>
-  )
-};
-
-export default News_item;
+    )
+  }
+}

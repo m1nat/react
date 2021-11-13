@@ -1,19 +1,23 @@
-import News_item from '../News-item/News-item';
+import React, { Component } from 'react';
+
+import NewsItem from '../News-item/News-item';
 import classes from './News.Module.scss';
 
-const News = () => {
-  return(
-    <div className={classes.wrapper}>
-      <News_item />
-      <News_item />
-      <News_item />
-      <News_item />
-      <News_item />
-      <News_item />
-      <News_item />
-    </div>
-  )
-};
 
+export default class News extends Component {
 
-export default News;
+  render() {
+    const { news } = this.props;
+
+    const renderingNews = news.map((newsItem) =>
+      <NewsItem  { ...newsItem } key={ newsItem.id } />
+    )
+
+    return (
+      <div className={classes.wrapper}>
+        { renderingNews }
+      </div>
+    )
+  }
+}
+

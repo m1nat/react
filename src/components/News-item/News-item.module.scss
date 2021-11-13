@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
 
   .img_news {
     width: 25%;
@@ -21,6 +21,7 @@
     p {
       text-align: left;
       margin-top: 10px;
+      text-indent: 20px;
     }
 
     .communicate {
@@ -57,3 +58,4 @@
     }
   }
 }
+

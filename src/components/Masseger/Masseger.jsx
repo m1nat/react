@@ -1,3 +1,5 @@
+import SendMessageInput from '../../UI/send-message-input';
+
 import classes from './Masseger.module.scss';
 
 const Messanger = () => {
@@ -10,10 +12,12 @@ const Messanger = () => {
         <div className={classes.friend_info}>
           <p>Sinkevick Vicktoria</p>
         </div>
-        <div className={classes.friend_avatar}></div>
+        <div className={classes.friend_avatar} ></div>
       </div>
       <div className={classes.window_message}></div>
-      <div className={classes.input_message}></div>
+      <div className={classes.input_message}>
+        <SendMessageInput />
+      </div>
     </div>
   )
 };
