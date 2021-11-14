@@ -5,7 +5,6 @@ import Body from '../../Body/Body';
 import './style.scss';
 
 const MainPage = () => {
-
   return(
     <div className='wrapper'>
     <Header />

@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
 
 import Messanger from '../Masseger/Masseger';
 import News from '../News/News';
