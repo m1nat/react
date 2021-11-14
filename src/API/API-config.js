@@ -9,10 +9,8 @@ export const firebaseConfig = {
   appId: "1:868649766298:web:9dd02603c071da53febe23"
 };
 
-
 export const FIREBASE_DATA = 'https://net-work-3d9f2-default-rtdb.firebaseio.com';
 export const authURL = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${firebaseConfig.apiKey}`;
-
 
 const app = initializeApp(firebaseConfig);
 

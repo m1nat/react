@@ -2,15 +2,20 @@ import classes from './News-item.module.scss';
 import React, { Component } from 'react';
 export default class NewsItem extends Component {
 
+
+
   render() {
-    const { news_title, news_body } = this.props;
+    const { el } = this.props
+    console.log(el);
     return (
       <div className={classes.news_item} onClick={this.show_news}>
-        <div className={classes.img_news}></div>
+        <img src={el.urlToImage} alt="" width='200px' height='130px'/>
         <div className={classes.news}>
-          <h4 style={this.style}>{news_title}</h4>
+          <h4 >
+            {el.title}
+          </h4>
           <p>
-            {news_body}
+            {el.description}
           </p>
           <div className={classes.communicate}>
             <div className={classes.like}></div>

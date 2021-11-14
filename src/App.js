@@ -1,11 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
-import { initialFirebase } from './API/API-config';
 
+import { getNews } from './API/Api-handlers';
 import MainPage from './components/Pages/Main-page/Main-page';
 import SignInPage from './components/Pages/Sign-in/Sign-in';
 
 function App() {
+
+
+
   return (
     <div>
       <Routes>

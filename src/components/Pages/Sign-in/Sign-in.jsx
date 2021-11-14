@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { signIn } from '../../../API/Api-handlers';
+import { setIdLS } from '../../../LocalStorage-services/ls-services';
 
 import classes from './Sign-in.module.scss';
 
@@ -8,9 +8,7 @@ const SignInPage = () => {
   const [credantions, setCred] = useState({
     email: '',
     password: ''
-  })
-
-  const setIdLS = token => localStorage.setItem('IDtoken', token)
+  });
 
   const login = async event => {
     event.preventDefault();
@@ -27,7 +25,8 @@ const SignInPage = () => {
       email: '',
       password: ''
     })
-  }
+
+  };
 
 
   return (
